@@ -22,3 +22,10 @@
     <% end %>
   </tbody>
 </table>
+
+<div>
+  <%= link_to "Next Page", users_path(page: @page + 1) %>
+  |
+  <%= link_to "Previous Page", users_path(page: @page - 1) %>
+
+</div>

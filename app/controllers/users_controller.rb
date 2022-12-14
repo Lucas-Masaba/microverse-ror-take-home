@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
+  USERS_PER_PAGE = 3
   def index
-    @users = User.all
+    @page = params.fetch(:page, 0).to_i
+    @users = User.offset(@page * USERS_PER_PAGE).limit(USERS_PER_PAGE)
   end
 
   def show
