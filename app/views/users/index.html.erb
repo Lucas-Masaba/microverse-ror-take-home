@@ -24,8 +24,14 @@
 </table>
 
 <div>
-  <%= link_to "Next Page", users_path(page: @page + 1) %>
-  |
   <%= link_to "Previous Page", users_path(page: @page - 1) %>
+  |
+  <%= link_to "Next Page", users_path(page: @page + 1) %>
 
 </div>
+
+<%= form_with(url: users_path, method: :get, data: {turbo_frame: "users", turbo_action: "advance"} ) do |form| %>
+  <%= form.label :query, "Search active and inactive users" %>
+  <%= form.text_field :query %>
+  <%= form.submit "Filter" %>
+<% end %>
