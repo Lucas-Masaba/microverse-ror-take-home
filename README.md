@@ -98,6 +98,7 @@ rake assets:precompile
 
 - Execute `rails db:create` to create the database.
 - Execute `rails db:migrate` to migrate the database.
+- Execute `rails db:seed` to populate the database.
 
 ### Usage
 
@@ -109,11 +110,10 @@ rails s
 - Visit http://localhost:3000/ on your browser to view the output.
 ### Run tests
 
-To run tests, run the following command:
-
-```bash
-  rspec
-```
+To run tests, run the following commands:
+- `rails db:migrate RAILS_ENV=test` to migrate the test database
+- - `rails db:seed RAILS_ENV=test` to populate the test database
+- `rspec`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
