@@ -6,6 +6,10 @@
 
 > In this project, I fetched data from an API and stored it on the database, displayed the stored data, added pagination and written tests.
 
+
+# Video Presentation
+- [Link to Video Presentation](https://www.loom.com/share/9e4b886bcb4a4d4a9229f17779dbb6fc)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
